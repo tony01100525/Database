@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>遊樂園查詢管理系統</title>
+  <link href="page.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 align="center">遊樂園資料查詢與管理系統</h1>
+  <form method="get" action="test.php"><table align="center">
+      <colgroup span="1" style="background-color: yellow;"></colgroup>
+      <tr>
+        <td height="100px" width="100px" align="center">
+          <font size="5">按鈕</font>
+        </td>
+        <td align="center">
+          <select onChange="renew(this)" height="100px" style="font-size:35px;">
+            <option>請選擇你要的按鈕</option>
+            <option value="SELECT * FROM `play` WHERE `customerid`='W448744521'">SELECT-FROM-WHERE</option><!--選擇id為W448744521的遊客正在玩的資訊-->
+            <option value="DELETE FROM `customer` WHERE `id` = 'L554777111'" >DELETE</option><!--刪除id為L554777111的遊客的資訊，表示已離開遊樂園-->
+            <option value="INSERT INTO `facility` VALUES ('A11','coffeecup','2022-1-5','6','N')">INSERT</option><!--加入id為A11的遊樂設施，表示有新設施添加到部門標號dno為6的部門-->
+            <option value="UPDATE `employee` SET `salary` = '40000' WHERE `eid` = 'B231145632'">UPDATE</option><!--更新eid為B231145632的員工薪水，表示加薪-->
+            <option value="UPDATE `facility` SET `maintenance`='Y' WHERE `dno` IN(SELECT `did` FROM `department` WHERE `dname`='sky')">IN</option><!--把部門名為sky的所有遊樂設施通通改成維修狀態進行維修-->
+            <option value="SELECT * FROM `customer` WHERE `id` NOT IN ((SELECT `customerid` FROM `play` WHERE 1) UNION (SELECT `cid` FROM `take` WHERE 1))">NOT IN</option><!--把沒有在玩也沒搭過公車的人找出來，也就是找迷路的人-->
+            <option value="SELECT `gender`,`age` FROM `customer` WHERE EXISTS (SELECT * FROM `take` WHERE `id`=`cid`) ORDER BY `age`">EXISTS</option><!--統計出到目前為止有搭公車的人的性別與年齡，並照年齡排序-->
+            <option value="SELECT `Efirstname`,`Elastname` FROM `employee` WHERE NOT EXISTS (SELECT * FROM `department` WHERE `eid`=`managerid`)">NOT EXISTS</option><!--選擇純員工，非主管級別的員工-->
+            <option value="SELECT `dname`,COUNT(`customerid`) FROM `play`,`facility`,`department` WHERE `facilityid`=`fid` AND `dno`=`did` GROUP BY `dname`">COUNT</option><!--統計目前為止各個部門的總遊玩人數，以部門名稱分組-->
+            <option value="SELECT `dname`,SUM(`salary`) FROM `employee`,`department` WHERE `dnum`=`did` GROUP BY `dname` ORDER BY SUM(`salary`)">SUM</option><!--找出所有部門的所有員工薪水總和，以部門名稱分組，並依照總和高低排序-->
+            <option value="SELECT * FROM `customer` WHERE `age` IN (SELECT MAX(`age`) FROM `customer`)">MAX</option><!--找出所有遊客中最年長的遊客-->
+            <option value="SELECT `fname`,MIN(`checkdate`) FROM `facility` WHERE 1">MIN</option><!--找出所有設施中離上次維修最久的設施-->
+            <option value="SELECT `fname`,AVG(`age`) FROM `facility`,`customer`,`play` WHERE `fid`=`facilityid` AND `customerid`=`id` GROUP BY `fname`">AVG</option><!--找出所有遊玩的設施的平均年齡，並以設施名稱分組-->
+            <option value="SELECT `fname`,COUNT(*) FROM `facility`,`play` WHERE `fid`=`facilityid` GROUP BY `fname` HAVING COUNT(*)>=3">HAVING</option><!--找出所有設施中到目前遊玩次數超過或等於3的設施並顯示遊玩次數，以設施分組-->
+          </select>
+        </td>
+      </tr>
+      <script>
+      function renew(selectObject) {
+        var value = selectObject.value;
+        document.getElementById('qq').innerHTML = value;
+        //document.getElementById("qq").value = value;
+      }
+      </script>
+      <!--<script>
+      var obj = document.getElementById("button");
+      var value = obj.option[obj.selectedIndex].value;
+    </script>-->
+      <tr>
+        <td align="center" height="100px">
+          <font size="5">指令</font>
+        </td>
+        <td align="center">
+          <textarea  id="qq" name="query" rows="6" cols="50" required></textarea>
+          <!--<input name="query" id="qq" style="padding:10px;">-->
+        </td>
+      </tr>
+    </table>
+    <p align="center"><input type="submit" value="送出查詢" style="font-size:35px;"></p>
+  </form>
+
+
+
+
+</body>
+
+</html>
