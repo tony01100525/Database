@@ -1,0 +1,265 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.5.0" title="Shotcut version 21.12.24" producer="main_bin">
+  <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <chain id="chain0" out="00:03:05.817">
+    <property name="length">00:03:05.833</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (online-video-cutter.com).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1e40bf3e210a6fa304c21d9e5f0ec934</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (online-video-cutter.com).mp4</property>
+  </chain>
+  <chain id="chain1" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統 (2).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8af41ef7ef9e8a651773ff2432dcfc96</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統 (2).mp4</property>
+  </chain>
+  <chain id="chain2" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統 (1).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c2911fc1ebdfa5c8f20d657886fabbcf</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統 (1).mp4</property>
+  </chain>
+  <chain id="chain3" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">b196245d1e8320718a6c3ea768eced7f</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統.mp4</property>
+  </chain>
+  <chain id="chain4" out="00:00:31.133">
+    <property name="length">00:00:31.150</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (4).webm</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">2d99fd160ede503bcecd5db239a2b1ab</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (4).webm</property>
+  </chain>
+  <chain id="chain5" out="00:05:00.917">
+    <property name="length">00:05:00.933</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (3).webm</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">4f8727087f27365b6981c3a3d01b91e5</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (3).webm</property>
+  </chain>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:03:05.817"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain2" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain3" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain4" in="00:00:00.000" out="00:00:31.133"/>
+    <entry producer="chain5" in="00:00:00.000" out="00:05:00.917"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:08:26.367">
+    <property name="length">00:08:26.383</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:08:26.367"/>
+  </playlist>
+  <chain id="chain6" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">b196245d1e8320718a6c3ea768eced7f</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統.mp4</property>
+  </chain>
+  <chain id="chain7" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統 (1).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c2911fc1ebdfa5c8f20d657886fabbcf</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統 (1).mp4</property>
+  </chain>
+  <chain id="chain8" out="00:03:05.817">
+    <property name="length">00:03:05.833</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (online-video-cutter.com).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1e40bf3e210a6fa304c21d9e5f0ec934</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (online-video-cutter.com).mp4</property>
+  </chain>
+  <chain id="chain9" out="00:00:02.550">
+    <property name="length">00:00:02.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/遊樂園資料查詢與管理系統 (2).mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">8af41ef7ef9e8a651773ff2432dcfc96</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">遊樂園資料查詢與管理系統 (2).mp4</property>
+  </chain>
+  <chain id="chain10" out="00:05:00.917">
+    <property name="length">00:05:00.933</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (3).webm</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">4f8727087f27365b6981c3a3d01b91e5</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (3).webm</property>
+    <filter id="filter0" in="00:00:00.800" out="00:00:14.833">
+      <property name="argument">由於影片時間限制，只示範按下按鈕的情況
+當按下按鈕後，會將指令印在指令欄位
+而系統是讀入指令欄位內的資訊做操作的
+所以打指令也可以操作
+</property>
+      <property name="geometry">6 85 1920 1080 1</property>
+      <property name="family">微軟正黑體</property>
+      <property name="size">34</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">middle</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">26</property>
+    </filter>
+  </chain>
+  <chain id="chain11" out="00:05:00.917">
+    <property name="length">00:05:00.933</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (3).webm</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">4f8727087f27365b6981c3a3d01b91e5</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (3).webm</property>
+  </chain>
+  <chain id="chain12" out="00:00:31.133">
+    <property name="length">00:00:31.150</property>
+    <property name="eof">pause</property>
+    <property name="resource">D:/Downloads/Screen Recording - Made with RecordCast (4).webm</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">2d99fd160ede503bcecd5db239a2b1ab</property>
+    <property name="ignore_points">1</property>
+    <property name="shotcut:caption">Screen Recording - Made with RecordCast (4).webm</property>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain6" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain7" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain8" in="00:00:01.083" out="00:03:02.550"/>
+    <entry producer="chain9" in="00:00:00.000" out="00:00:02.550"/>
+    <entry producer="chain10" in="00:00:00.800" out="00:00:14.833"/>
+    <entry producer="chain11" in="00:00:14.850" out="00:04:51.200"/>
+    <entry producer="chain12" in="00:00:04.367" out="00:00:31.133"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 21.12.24" in="00:00:00.000" out="00:08:26.367">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
+</mlt>
